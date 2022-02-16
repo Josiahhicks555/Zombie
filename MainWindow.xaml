@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Zombie_Record
+namespace ZombieRecord
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -21,16 +21,48 @@ namespace Zombie_Record
     public partial class MainWindow : Window
     {
         string[] Zombie_Names = { "Joe", "Frank", "Bob", "Graw", "Avah", "Brains", "Chomp", "Legs", "Kevin" };
+        string[] Zombie_Types = { "Walking", "Runner", "Blue Walker", "Vodoo", "Ghoul"};
+        string[] Zombie_Location = { "U.S.A", "Japan", "Canada", "Germany" };
+        string[] Zombie_Specialty = { "Spitter", "Exploder", "Tank", "Hazmat" };
+        string[] Zombie_Eats = { "Brains", "Trash", "Orgains"};
         public MainWindow()
         {
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Zombie_Gen(object sender, RoutedEventArgs e)
         {
-            Random random = new Random();
-            
-            Name.Text = Zombie_Names.ToString();
+            var random = new Random();
+
+            int zombieAge = random.Next(1, 100);
+            Age.Text = zombieAge.ToString();
+
+
+            int zombieNameNumber = random.Next(1,9);
+            Name.Text = Zombie_Names[zombieNameNumber];
+
+            int zombieTypesName = random.Next(1,5);
+            Type.Text = Zombie_Types[zombieTypesName];
+
+            int zombieLocationName = random.Next(1,4);
+            LastLocation.Text = Zombie_Location[zombieLocationName];
+
+            int zombieSpecialtyName = random.Next(1,4);
+            Specialty.Text = Zombie_Specialty[zombieSpecialtyName];
+
+            int zombieEatsName = random.Next(1, 3);
+            EatsBrains.Text = Zombie_Eats[zombieEatsName];
+
+            Gen.IsEnabled = false;
+
+
         }
+
+        private void Zombie_Sightings(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+
     }
 }
