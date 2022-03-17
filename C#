@@ -44,7 +44,7 @@
         <Label Content="Type"  Grid.Column="7" HorizontalAlignment="Center" RenderTransformOrigin="-0.511,0.344" Width="75" Grid.Row="1" Margin="2,0,0,40"/>
         <Label Content="Last Location"  Grid.Column="9" HorizontalAlignment="Center" VerticalAlignment="Top" RenderTransformOrigin="-0.511,0.344" Width="77" Grid.Row="1"/>
         <Label Content="Specialty"  Grid.Column="11" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,10,0,0" RenderTransformOrigin="-0.511,0.344" Width="77" Grid.RowSpan="2"/>
-        <Label Content="Eats Brains"  Grid.Column="13" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="2,10,0,0" RenderTransformOrigin="-0.511,0.344" Width="75" Grid.RowSpan="2"/>
+        <Label Content="Eats"  Grid.Column="13" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="2,10,0,0" RenderTransformOrigin="-0.511,0.344" Width="75" Grid.RowSpan="2"/>
         <Label Content="Your sightings"  Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,39,27,0" RenderTransformOrigin="-0.511,0.344" Width="88" Grid.Row="1"/>
 
 
